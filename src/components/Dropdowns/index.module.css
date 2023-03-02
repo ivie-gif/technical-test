@@ -1,0 +1,55 @@
+.mainDiv {
+  display: flex;
+  margin: 0px 15px;
+  justify-content: space-between;
+}
+
+.flexText {
+  font-family: "Jost";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34.68px;
+  color: #ffffff;
+}
+
+.chakraButton{
+  font-family: Jost;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #C6C7CB;
+  background-color: #1C2031;
+  width: 270px;
+  height: 45px;
+  margin-top: 25px;
+}
+
+.chakraMenu {
+  background-color: #1c2031;
+  border-color: #252b46;
+  box-shadow: none;
+  height: 45px;
+  width: 260px;
+  left: 0px;
+  top: 0px;
+  border-radius: 6px;
+  box-shadow: transparent;
+  border-style: none;
+  outline-offset: #252b46;
+  color: #C6C7CB;
+}
+
+.chakraMenuList {
+    width: 270px;
+    height: 45px;
+    padding: 12px;
+    background-color: #1c2031;
+    border-style: none;
+    font-family: Jost;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2023px;
+}
+

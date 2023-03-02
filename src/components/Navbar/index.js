@@ -1,6 +1,7 @@
 import React from "react";
 import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
+import './index.css'
 
 const Index = () => {
   return (
@@ -8,7 +9,7 @@ const Index = () => {
       <img src="/Images/Logo.svg" alt="icon logo" />
       <h3>ABOUT US</h3>
       <Menu>
-        {({ isOpen, Button }) => (
+        {({ isOpen }) => (
           <>
             <MenuButton
               isActive={isOpen}
@@ -27,7 +28,7 @@ const Index = () => {
         )}
       </Menu>
       <Menu>
-        {({ isOpen, Button }) => (
+        {({ isOpen }) => (
           <>
             <MenuButton
               isActive={isOpen}

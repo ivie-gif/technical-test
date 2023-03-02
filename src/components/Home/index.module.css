@@ -2,14 +2,12 @@ body {
     background-color: #1F2335;
   }
   
-  
-  
-  .div-pres {
+  .divPres {
     display: flex;
     margin: 0px 15px;
   }
   
-  .pres-div1 {
+  .presDiv1 {
     font-family:'Jost';
     font-weight: 700;
     font-size: 30px;
@@ -21,7 +19,7 @@ body {
       color: green;
     } */
   }
-  .pres-div2 {
+  .presDiv2 {
     background-color: #181C2E;
     margin-left: 10px;
     width: 170px;;
@@ -31,7 +29,7 @@ body {
     margin-top: 44px;
   }
   
-  .pres-div2-text {
+  .presDiv2Text {
     font-family:'Jost';
     font-weight: 500;
     font-size: 14px;

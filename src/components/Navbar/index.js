@@ -1,13 +1,13 @@
 import React from "react";
 import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
-import './index.css'
+import Styles from './index.module.css'
 
 const Index = () => {
   return (
-    <div className="navbar">
+    <div className={Styles.navbar}>
       <img src="/Images/Logo.svg" alt="icon logo" />
-      <h3>ABOUT US</h3>
+      <h3 className={Styles.navText}>ABOUT US</h3>
       <Menu>
         {({ isOpen }) => (
           <>
@@ -15,6 +15,7 @@ const Index = () => {
               isActive={isOpen}
               as={Button}
               rightIcon={<ChevronDownIcon />}
+              className={Styles.navDropdown}
             >
               OUR COMMUNITIES
             </MenuButton>
@@ -34,6 +35,7 @@ const Index = () => {
               isActive={isOpen}
               as={Button}
               rightIcon={<ChevronDownIcon />}
+              className={Styles.navDropdown}
             >
               ELECTION DATA
             </MenuButton>
@@ -46,12 +48,12 @@ const Index = () => {
           </>
         )}
       </Menu>
-      <h3>E-BUDDY</h3>
-      <h3>VEO PLATFORM</h3>
-      <Button className="login-butn">
+      <h3 className={Styles.navText}>E-BUDDY</h3>
+      <h3 className={Styles.navText}>VEO PLATFORM</h3>
+      <Button className={Styles.loginButn}>
         LOGIN
         </Button>
-        <Button className="signin-butn">
+        <Button className={Styles.signinButn}>
         SIGN UP
         </Button>
     </div>

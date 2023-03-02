@@ -1,21 +1,23 @@
 import React from "react";
 import Navbar from '../Navbar/index';
 import Dropdowns from '../Dropdowns/index'
-import './index.css'
+import Footer from '../Footer/index'
+import Styles from './index.module.css'
 
 const Index = () => {
   return (
     <div>
       <Navbar />
-      <div className="div-pres">
+      <div className={Styles.divPres}>
         <div>
-          <p className="pres-div1">Post Election Data</p>
+          <p className={Styles.presDiv1}>Post Election Data</p>
         </div>
-        <div className="pres-div2">
-          <h3 className="pres-div2-text">PRESIDENTIAL / 2023</h3>
+        <div className={Styles.presDiv2}>
+          <h3 className={Styles.presDiv2Text}>PRESIDENTIAL / 2023</h3>
         </div>
       </div>
     <Dropdowns />
+    <Footer />
     </div>
   );
 };

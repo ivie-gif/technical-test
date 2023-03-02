@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 15px;
+}
+
+.navText {
+  font-family: "jost";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20.23px;
+  color: #FFFFFF;
+}
+.navDropdown {
+  background-color: transparent;
+  border-style: none;
+  font-family: "jost";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20.23px;
+  color: #FFFFFF;
+}
+
+.signinButn {
+  background-color: #e5b805;
+  width: 129px;
+  border-radius: 4px;
+  padding: 12px, 32px, 12px, 32px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "jost";
+  outline: #e5b805;
+  line-height: 23.12px;
+  cursor: pointer;
+}
+
+.loginButn {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "jost";
+  line-height: 23.12px;
+  border-style: none;
+  color: #FFFFFF;
+  background-color: transparent;
+}

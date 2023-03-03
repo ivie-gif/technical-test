@@ -21,6 +21,7 @@
   text-align: left;
   color: #C6C7CB;
   background-color: #1C2031;
+  border: 1px solid #252b46;
   width: 270px;
   height: 45px;
   margin-top: 25px;
@@ -28,7 +29,8 @@
 
 .chakraMenu {
   background-color: #1c2031;
-  border-color: #252b46;
+  /* border-color: #252b46; */
+  /* border: 1px solid #252b46; */
   box-shadow: none;
   height: 45px;
   width: 260px;

@@ -1,0 +1,75 @@
+.mainDiv{
+    display: flex;
+    background-color: #1B1F30;
+    border-style: green;
+}
+
+.GeoZone {
+    background-color: #1B1F30;
+    border-color: #272935;
+    border-radius: 13px;
+    width: 523px;
+    height: 337px;
+    padding-left: 35px;
+    border: 1px solid #272935;
+}
+
+.GeoZoneP {
+    font-family: 'Jost';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+
+}
+
+
+.anchorBg {
+    background-color: #1B1F30;
+    border-color: #272935;
+    border-radius: 13px;
+    width: 264px;
+    height: 337px;
+    padding-left: 35px;
+    border: 1px solid #272935;
+}
+
+.genderDiv {
+    display: flex;
+}
+
+.Elected {
+    font-family: 'Jost';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+.Nums {
+    font-family: Jost;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+    margin-top: -15px;
+}
+
+.genders {
+    font-family: 'Jost';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.images {
+    margin-top: 17px;
+    margin-left: 5px;
+}

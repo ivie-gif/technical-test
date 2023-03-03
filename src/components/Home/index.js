@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from '../Navbar/index';
-import Dropdowns from '../Dropdowns/index'
-import Footer from '../Footer/index'
+import Dropdowns from '../Dropdowns'
+import Footer from '../Footer'
+import MapSection from '../MapSection'
+import PieChart from '../PieChart'
 import Styles from './index.module.css'
 
 const Index = () => {
   return (
-    <div>
+    <div style={{overflow: 'hidden'}}>
       <Navbar />
       <div className={Styles.divPres}>
         <div>
@@ -17,6 +19,8 @@ const Index = () => {
         </div>
       </div>
     <Dropdowns />
+    <MapSection />
+    <PieChart />
     <Footer />
     </div>
   );

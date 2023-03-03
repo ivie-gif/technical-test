@@ -1,0 +1,16 @@
+export const colorCodes = {
+GeoP: 'CANDIDATES BY GEOPOLITICAL ZONES',
+ColorImgNE: '/Images/green.svg',
+geoNE: 'North East',
+geoNW: 'North West',
+geoNC: 'North Central',
+geoSW: 'South West',
+geoSS: 'South South',
+geoSE: 'South East',
+Nums: '3,000',
+ColorImgNW: '/Images/darkPurple.svg',
+ColorImgNC: '/Images/purple.svg',
+ColorImgSW: '/Images/red.svg',
+ColorImgSS: '/Images/blue.svg',
+ColorImgSE: '/Images/aqua.svg',
+}

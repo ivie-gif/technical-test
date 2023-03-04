@@ -39,10 +39,10 @@ const Index = () => {
             >
               ELECTION DATA
             </MenuButton>
-            <MenuList>
-              <MenuItem>NONE</MenuItem>
-              <MenuItem onClick={() => alert("Kagebunshin")}>
-                Create a Copy
+            <MenuList className={Styles.navChakraMenu}>
+              <MenuItem className={Styles.navChakraMenuList} style={{borderBottom: '1px solid #252b46'}}>Election Day Live Updates</MenuItem>
+              <MenuItem className={Styles.navChakraMenuList}>
+                Post Election Analysis
               </MenuItem>
             </MenuList>
           </>

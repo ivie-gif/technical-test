@@ -8,29 +8,29 @@ const Index = () => {
     <div className={Styles.mainFlex}>
         <div className={Styles.textColor}>
         <img src={footerData.Logo} alt='Logo Icon' className={Styles.ImageStyle} />
-        <h3
+        <h3 className={Styles.allText}
         dangerouslySetInnerHTML={{
             __html: footerData.Address,
           }}></h3>
-        <h3>{footerData.Address1}</h3>
+        <h3 className={Styles.allText}>{footerData.Address1}</h3>
         </div>
-        <div className={Styles.textColor}>
-        <h3>{footerData.Heading2}</h3>
-        <h3>{footerData.Story}</h3> 
-        <h3>{footerData.Blog}</h3>
-        <h3>{footerData.About}</h3>
-        <h3>{footerData.Video}</h3>
+        <div>
+        <h3  className={Styles.textColor}>{footerData.Heading2}</h3>
+        <h3 className={Styles.allText}>{footerData.Story}</h3> 
+        <h3 className={Styles.allText}>{footerData.Blog}</h3>
+        <h3 className={Styles.allText}>{footerData.About}</h3>
+        <h3 className={Styles.allText}>{footerData.Video}</h3>
         </div>
-        <div className={Styles.textColor}>
-        <h3>{footerData.Heading3}</h3>
-        <h3>{footerData.Faq}</h3> 
-        <h3>{footerData.Priv}</h3>
-        <h3>{footerData.Term}</h3>
+        <div>
+        <h3  className={Styles.textColor}>{footerData.Heading3}</h3>
+        <h3 className={Styles.allText}>{footerData.Faq}</h3> 
+        <h3 className={Styles.allText}>{footerData.Priv}</h3>
+        <h3 className={Styles.allText}>{footerData.Term}</h3>
         </div>
-        <div className={Styles.textColor}>
-        <h3>{footerData.Heading4}</h3>
-        <h3>{footerData.Mail}</h3> 
-        <h3>{footerData.Phone}</h3>
+        <div>
+        <h3  className={Styles.textColor}>{footerData.Heading4}</h3>
+        <h3 className={Styles.allText}>{footerData.Mail}</h3> 
+        <h3 className={Styles.allText}>{footerData.Phone}</h3>
         <div className={Styles.socialIcons}>
             <div><img src={footerData.Image1} alt='Instagram Icon' /></div>
             <div><img src={footerData.Image2} alt='Twitter Icon' className={Styles.ImageTwo} /></div>

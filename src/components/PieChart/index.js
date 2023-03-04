@@ -1,20 +1,29 @@
 import React from "react";
 import { pieChartData } from "../../mockData/pieChartData";
 import Styles from "./index.module.css";
+import MapContent from "./mapContent";
+import PieChartComp from "./pieChartComp";
 
 const Index = () => {
   return (
-    <div className={Styles.mainDiv}>
-      <div></div>
-      {/* Second Div */}
+    <div className={Styles.mainDiv} style={{
+      width: "90%",
+      margin: "auto",
+      height: "428px",
+      borderRadius: "13px",
+      border: "1px solid #393C4A",
+      backgroundColor: "#1B1F30",
+      marginTop: '25px',
+      marginBottom: '55px'
+    }}>
+      
+      {/* 1st Div */}
       <div className={Styles.GeoZone}>
-      <p className={Styles.GeoZoneP}>{pieChartData.GeoP}</p>
-      <div>
-        {/* <div>Div for Image MAP</div> */}
-        <div>
-          
-        </div>
+        <PieChartComp />
       </div>
+      {/* second div */}
+      <div className={Styles.GeoZoneMap}>
+        <MapContent />
       </div>
       {/* Third Div */}
       <div className={Styles.anchorBg}>

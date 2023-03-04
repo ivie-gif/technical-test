@@ -47,7 +47,7 @@ const Index = () => {
           rightIcon={<ChevronDownIcon />}
           className={Styles.chakraButton}
         >
-          Governorship
+          Presidential
         </MenuButton>
         <MenuList className={Styles.chakraMenu}>
           <MenuItem className={Styles.chakraMenuList}>Presidential</MenuItem>

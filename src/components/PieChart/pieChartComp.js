@@ -1,10 +1,10 @@
-import "./styles.css";
+// import "./styles.css";
 import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Sector } from "recharts";
 
 const data = [
-  { name: "Group A", value: 800 },
-  { name: "", value: 200 },
+  { name: 'TOTAL VOTES', num: '168,912,222', votes: '8,400,000', status: 'REJECTED VOTES', value: 200, color: '#E30325'},
+  { name: "", num: "", votes: '160,512,222,', status: 'ACCEPTED VOTES', value: 800 , color: '#449352'},
 
 ];
 
@@ -20,8 +20,9 @@ const renderActiveShape = (props) => {
     endAngle,
     fill,
     payload,
-    percent,
-    value
+    color,
+    votes,
+    status,
   } = props;
   const sin = Math.sin(-RADIAN * midAngle);
   const cos = Math.cos(-RADIAN * midAngle);
@@ -35,9 +36,19 @@ const renderActiveShape = (props) => {
 
   return (
     <g>
-      <text x={cx} y={cy} dy={8} textAnchor="middle" fill={fill}>
-        {payload.name}
+      <text x={cx} y={cy} dy={1} textAnchor="middle" fill='#FFFFFF' fontSize={12}
+       dangerouslySetInnerHTML={{
+        __html: payload.name,
+      }}
+      > 
       </text>
+      <text x={cx} y={cy} dy={20} textAnchor="middle" fill='#FFFFFF' fontSize={18}
+       dangerouslySetInnerHTML={{
+        __html: payload.num,
+      }}
+      > 
+      </text>
+     
       <Sector
         cx={cx}
         cy={cy}
@@ -46,43 +57,46 @@ const renderActiveShape = (props) => {
         startAngle={startAngle}
         endAngle={endAngle}
         fill={fill}
+        color={color}
       />
       <Sector
         cx={cx}
         cy={cy}
         startAngle={startAngle}
         endAngle={endAngle}
-        innerRadius={outerRadius + 6}
-        outerRadius={outerRadius + 10}
+        innerRadius={outerRadius - 6}
+        outerRadius={outerRadius - 10}
         fill={fill}
+        color={color}
       />
       <path
         d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`}
-        stroke={fill}
+        stroke='#A28888'
         fill="none"
       />
-      <circle cx={ex} cy={ey} r={2} fill={fill} stroke="none" />
       <text
         x={ex + (cos >= 0 ? 1 : -1) * 12}
         y={ey}
         textAnchor={textAnchor}
-        fill="#333"
-      >{`PV ${value}`}</text>
+        fill="#FFFFFF"
+        style={{fontWeight: '600', fontSize: '10px', width: '10px'}}
+      >{`${status}`}</text>
       <text
         x={ex + (cos >= 0 ? 1 : -1) * 12}
         y={ey}
         dy={18}
         textAnchor={textAnchor}
-        fill="#999"
+        fill="#FFFFFF"
+        style={{fontWeight: '700', fontSize: '12px', color: 'rgba(252, 248, 248, 0.482)', width: '10px'}}
       >
-        {`(Rate ${(percent * 100).toFixed(2)}%)`}
+        {`${votes}`}
       </text>
     </g>
   );
 };
 
 const PieChartComp = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [, setActiveIndex] = useState(0);
   const onPieEnter = useCallback(
     (_, index) => {
       setActiveIndex(index);
@@ -91,7 +105,9 @@ const PieChartComp = () => {
   );
 
   return (
-    <PieChart width={400} height={400}>
+    <div >
+<PieChart width={400} height={300} style={{ margin: '-40px -25px'}}>
+  <circle   stroke="#FFFFFF" />
       <Pie
         activeIndex={[0,1]}
         activeShape={renderActiveShape}
@@ -100,11 +116,13 @@ const PieChartComp = () => {
         cy={200}
         innerRadius={60}
         outerRadius={80}
-        fill="#8884d8"
+        fill='#449352'
         dataKey="value"
-        // onMouseEnter={onPieEnter}
+        
       />
     </PieChart>
+    </div>
+    
   );
 }
 

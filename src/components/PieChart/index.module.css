@@ -1,75 +1,171 @@
-.mainDiv{
-    display: flex;
-    background-color: #1B1F30;
-    border-style: green;
+.mainDiv {
+  display: flex;
+  background-color: #1b1f30;
+  border-style: green;
 }
 
 .GeoZone {
-    background-color: #1B1F30;
-    border-color: #272935;
-    border-radius: 13px;
-    width: 523px;
-    height: 337px;
-    padding-left: 35px;
-    border: 1px solid #272935;
+  background-color: #1b1f30;
+  border-color: #272935;
+  border-radius: 13px;
+  width: 500px;
+  height: 337px;
+  padding-left: 35px;
+  border: 1px solid #272935;
+  margin: 30px 15px 0px 15px;
+  overflow: hidden;
 }
 
 .GeoZoneP {
-    font-family: 'Jost';
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
-    color: #FFFFFF;
-
+  font-family: "Jost";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #ffffff;
 }
 
-
 .anchorBg {
-    background-color: #1B1F30;
-    border-color: #272935;
-    border-radius: 13px;
-    width: 264px;
-    height: 337px;
-    padding-left: 35px;
-    border: 1px solid #272935;
+  background-color: #1b1f30;
+  border-color: #272935;
+  border-radius: 13px;
+  width: 260px;
+  height: 337px;
+  padding-left: 35px;
+  border: 1px solid #272935;
+  margin: 30px 15px 0px 5px;
 }
 
 .genderDiv {
-    display: flex;
+  display: flex;
 }
 
 .Elected {
-    font-family: 'Jost';
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
-    color: #FFFFFF;
-    margin-top: 40px;
+  font-family: "Jost";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #ffffff;
+  margin-top: 40px;
 }
 
 .Nums {
-    font-family: Jost;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0em;
-    color: #FFFFFF;
-    margin-top: -15px;
+  font-family: Jost;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  color: #ffffff;
+  margin-top: -15px;
 }
 
 .genders {
-    font-family: 'Jost';
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FFFFFF;
+  font-family: "Jost";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
 }
 
 .images {
-    margin-top: 17px;
-    margin-left: 5px;
+  margin-top: 17px;
+  margin-left: 5px;
 }
+
+.textCandidate {
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+
+.GeoZoneMap {
+  background-color: #1b1f30;
+  border-radius: 13px;
+  width: 500px;
+  height: 337px;
+  padding-left: 35px;
+  border: 1px solid #272935;
+  margin: 30px 5px 0px 5px;
+}
+
+.colorDivPie {
+  height: 14px;
+  width: 22px;
+  left: 0px;
+  top: 2px;
+  border-radius: 2px;
+  background-color: #449352;
+}
+
+.colorPieTxt {
+  font-family: Jost;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  margin: 0px 15px 0px 7px;
+}
+
+.colorPieNum {
+  font-family: Jost;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(252, 248, 248, 0.482);
+  margin-top: 0.5px;
+}
+
+.colorDivPie2 {
+    height: 14px;
+    width: 22px;
+    left: 0px;
+    top: 2px;
+    border-radius: 2px;
+    background-color: #6D769D;
+  }
+
+  .colorDivPie3 {
+    height: 14px;
+    width: 22px;
+    left: 0px;
+    top: 2px;
+    border-radius: 2px;
+    background-color: #A163BE;
+  }
+
+  .colorDivPie4 {
+    height: 14px;
+    width: 22px;
+    left: 0px;
+    top: 2px;
+    border-radius: 2px;
+    background-color: #E30325;
+  }
+
+  .colorDivPie5 {
+    height: 14px;
+    width: 22px;
+    left: 0px;
+    top: 2px;
+    border-radius: 2px;
+    background-color: #2249D1;
+  }
+
+  .colorDivPie6 {
+    height: 14px;
+    width: 22px;
+    left: 0px;
+    top: 2px;
+    border-radius: 2px;
+    background-color:#018796;
+  }

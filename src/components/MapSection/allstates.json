@@ -7,7 +7,7 @@
     {
       "id": "ADAMAWA",
       "val": "2",
-      "bg": "red"
+      "bg": "#D62B3C"
     },
     {
       "id": "AKWA IBOM",
@@ -37,7 +37,7 @@
     {
       "id": "BORNO",
       "val": "8",
-      "bg": "red"
+      "bg": "#0AA83F"
     },
     {
       "id": "CROSS RIVER",
@@ -77,7 +77,7 @@
     {
       "id": "GOMBE",
       "val": "16",
-      "bg": "red"
+      "bg": "#D62B3C"
     },
     {
       "id": "IMO",
@@ -172,16 +172,21 @@
     {
       "id": "TARABA",
       "val": "35",
-      "bg": "red"
+      "bg": "#D62B3C"
+    },
+    {
+      "id": "",
+      "val": "36",
+      "bg": "#449352"
     },
     {
       "id": "YOBE",
-      "val": "36",
-      "bg": "red"
+      "val": "37",
+      "bg": "#D62B3C"
     },
     {
       "id": "ZAMFARA",
-      "val": "37",
+      "val": "38",
       "bg": "#64CCFF"
     }
   ]

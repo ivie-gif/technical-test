@@ -4,11 +4,12 @@ body {
   
   .divPres {
     display: flex;
-    margin: 0px 15px;
+    margin: 0px 50px;
+    margin-top: -50px;
   }
   
   .presDiv1 {
-    font-family:'Jost';
+    font-family: 'Jost', sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height:43.35px;
@@ -30,7 +31,7 @@ body {
   }
   
   .presDiv2Text {
-    font-family:'Jost';
+    font-family: 'Jost', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 20.23px;

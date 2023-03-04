@@ -1,11 +1,11 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin: 25px 15px;
+  margin: 50px 50px;
 }
 
 .navText {
-  font-family: "jost";
+  font-family: 'Jost', sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20.23px;
@@ -14,7 +14,7 @@
 .navDropdown {
   background-color: transparent;
   border-style: none;
-  font-family: "jost";
+  font-family: 'Jost', sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20.23px;
@@ -28,7 +28,7 @@
   padding: 12px, 32px, 12px, 32px;
   font-size: 16px;
   font-weight: 600;
-  font-family: "jost";
+  font-family: 'Jost', sans-serif;
   outline: #e5b805;
   line-height: 23.12px;
   cursor: pointer;
@@ -37,9 +37,30 @@
 .loginButn {
   font-size: 16px;
   font-weight: 600;
-  font-family: "jost";
+  font-family: 'Jost', sans-serif;
   line-height: 23.12px;
   border-style: none;
   color: #FFFFFF;
   background-color: transparent;
+}
+
+.navChakraMenu {
+  background-color: #1c2031;
+  box-shadow: none;
+  border-radius: 6px;
+  box-shadow: transparent;
+  border-style: none;
+  outline-offset: #252b46;
+  color: #1c2031;
+}
+
+.navChakraMenuList {
+  width: 270px;
+  height: 45px;
+  padding: 12px;
+  border-style: none;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2023px;
 }

@@ -1,21 +1,32 @@
 .body {
-  background-color: rgba(244, 241, 241, 0.041);
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 300px;
+  padding-top: 40px;
 }
 .mainFlex {
   display: flex;
   justify-content: space-between;
-  margin: 0px 30px;
+  margin: 0px 100px;
   padding-top: 20px;
 }
 
 .textColor {
   color: #FFFFFF;
-  font-family: 'Jost';
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.allText {
+  color: #FFFFFF;
+  font-family: 'Jost', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
-  text-align: left;
 }
 
 .socialIcons {

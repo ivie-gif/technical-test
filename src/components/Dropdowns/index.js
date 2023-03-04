@@ -23,9 +23,9 @@ const Index = () => {
           Election Data
         </MenuButton>
         <MenuList className={Styles.chakraMenu}>
-          <MenuItem className={Styles.chakraMenuList}>Pre-Election</MenuItem>
+          <MenuItem className={Styles.chakraMenuList} style={{borderBottom: '1px solid #252b46'}}>Pre-Election</MenuItem>
           
-          <MenuItem className={Styles.chakraMenuList}>
+          <MenuItem className={Styles.chakraMenuList} style={{borderBottom: '1px solid #252b46'}}>
             Election Day Live Updates
           </MenuItem>
         
@@ -50,11 +50,11 @@ const Index = () => {
           Presidential
         </MenuButton>
         <MenuList className={Styles.chakraMenu}>
-          <MenuItem className={Styles.chakraMenuList}>Presidential</MenuItem>
-          <MenuItem className={Styles.chakraMenuList}>
+          <MenuItem className={Styles.chakraMenuList} style={{borderBottom: '1px solid #252b46'}}>Presidential</MenuItem>
+          <MenuItem className={Styles.chakraMenuList} style={{borderBottom: '1px solid #252b46'}} >
             Gubernatorial
           </MenuItem>
-          <MenuItem className={Styles.chakraMenuList}>
+          <MenuItem className={Styles.chakraMenuList} style={{borderBottom: '1px solid #252b46'}}>
             Senate
           </MenuItem>
           <MenuItem className={Styles.chakraMenuList}>
@@ -77,33 +77,33 @@ const Index = () => {
         >
           2023
         </MenuButton>
-        <MenuList className={Styles.chakraMenu}>
-          <MenuItem className={Styles.chakraMenuList}>1995</MenuItem>
-          <MenuItem className={Styles.chakraMenuList}>
+        <MenuList className={Styles.chakraMenu} >
+          <MenuItem className={Styles.chakraMenuList} style={{borderBottom: '1px solid #252b46'}}>1995</MenuItem>
+          <MenuItem className={Styles.chakraMenuList} style={{borderBottom: '1px solid #252b46'}}>
             1991
           </MenuItem>
-          <MenuItem className={Styles.chakraMenuList}>
+          <MenuItem className={Styles.chakraMenuList} style={{borderBottom: '1px solid #252b46'}}>
             1987
           </MenuItem>
-          <MenuItem className={Styles.chakraMenuList}>
+          <MenuItem className={Styles.chakraMenuList} style={{borderBottom: '1px solid #252b46'}}>
             1983
           </MenuItem>
-          <MenuItem className={Styles.chakraMenuList}>
+          <MenuItem className={Styles.chakraMenuList} style={{borderBottom: '1px solid #252b46'}}>
             1991
           </MenuItem>
-          <MenuItem className={Styles.chakraMenuList}>
+          <MenuItem className={Styles.chakraMenuList}style={{borderBottom: '1px solid #252b46'}}>
             1979
           </MenuItem>
-          <MenuItem className={Styles.chakraMenuList}>
+          <MenuItem className={Styles.chakraMenuList} style={{borderBottom: '1px solid #252b46'}}>
             1975
           </MenuItem>
-          <MenuItem className={Styles.chakraMenuList}>
+          <MenuItem className={Styles.chakraMenuList} style={{borderBottom: '1px solid #252b46'}}>
             1967
           </MenuItem>
-          <MenuItem className={Styles.chakraMenuList}>
+          <MenuItem className={Styles.chakraMenuList} style={{borderBottom: '1px solid #252b46'}}>
             1963
           </MenuItem>
-          <MenuItem className={Styles.chakraMenuList}>
+          <MenuItem className={Styles.chakraMenuList} style={{borderBottom: '1px solid #252b46'}}>
             1959
           </MenuItem>
         </MenuList>

@@ -1,5 +1,5 @@
 export const footerData = {
-    Logo: 'Images/Logo.svg',
+    Logo: '/Images/logo.svg',
     Address: 'Isale Eko Avenue, Dolphin Estate, Ikoyi, Lagos,<br/> Nigeria',
     Address1: '© 2022 Hernalytics',
     Heading2: 'About',

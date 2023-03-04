@@ -6,7 +6,7 @@ import Styles from './index.module.css'
 const Index = () => {
   return (
     <div className={Styles.navbar}>
-      <img src="/Images/Logo.svg" alt="icon logo" />
+      <img src="/Images/logo.svg" alt="icon logo" />
       <h3 className={Styles.navText}>ABOUT US</h3>
       <Menu>
         {({ isOpen }) => (

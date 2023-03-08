@@ -43,7 +43,7 @@ export default function MapChart() {
       <section style={{
           marginTop: "45px",
           position: "absolute",
-          bottom: 150,
+          bottom: -100,
           right: 130,
         }}>
 
@@ -62,7 +62,7 @@ export default function MapChart() {
         style={{
           marginTop: "45px",
           position: "absolute",
-          bottom: -300,
+          bottom: -600,
           right: 150,
         }}
       >

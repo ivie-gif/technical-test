@@ -4,6 +4,7 @@ import Dropdowns from '../Dropdowns'
 import Footer from '../Footer'
 import MapSection from '../MapSection'
 import PieChart from '../PieChart'
+import Presidential from '../Presidential'
 import Styles from './index.module.css'
 
 const Index = () => {
@@ -19,6 +20,9 @@ const Index = () => {
         </div>
       </div>
     <Dropdowns />
+    <div style={{marginBottom: '200px'}}>
+    <Presidential/>
+    </div>
     <MapSection />
     <PieChart />
     <Footer />

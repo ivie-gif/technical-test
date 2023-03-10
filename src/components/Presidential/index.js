@@ -42,6 +42,7 @@ const Index = () => {
 
   return (
     <div>
+        <h3 style={{color: '#FFFFFF',fontSize: '16px', fontWeight: '500', fontFamily: 'Jost', margin: '15px 55px'}}>PRESIDENT</h3>
       <div style={{ display: "flex", margin: '0px 55px' }}>
         {presidentialData &&
           presidentialData.map((presidential) => (

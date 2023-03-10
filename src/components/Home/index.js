@@ -5,6 +5,7 @@ import Footer from '../Footer'
 import MapSection from '../MapSection'
 import PieChart from '../PieChart'
 import Presidential from '../Presidential'
+import Result from '../Result'
 import Styles from './index.module.css'
 
 const Index = () => {
@@ -24,6 +25,7 @@ const Index = () => {
     <Presidential/>
     </div>
     <MapSection />
+    <Result />
     <PieChart />
     <Footer />
     </div>

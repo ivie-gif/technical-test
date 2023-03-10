@@ -1,6 +1,8 @@
 import { ring } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Tooltip } from "@chakra-ui/react";
 import { MinusIcon, AddIcon } from '@chakra-ui/icons'
+import axios from "axios";
 import {
   ComposableMap,
   Geographies,
@@ -12,21 +14,52 @@ import { scaleQuantize } from "d3-scale";
 import allstates from "./allstates.json";
 import "./index.css";
 
+const stateValue = {
+  ABIA: '6010',
+  ADAMAWA: '6000',
+  ANAMBRA: '30000',
+  'CROSS RIVER': '90900',
+  RIVERS: '323',
+  LAGOS: '220'
+}
+
+
+
 const geoUrl = `https://raw.githubusercontent.com/deldersveld/topojson/master/countries/nigeria/nigeria-states.json`;
+
 
 const colorScale = scaleQuantize()
   .domain([0.09, 0.41])
 
   .range(["#64CCFF", "#0AA83F", "#D62B3C", "#802334"]);
 
+
+
 export default function MapChart() {
-  const [position, setPosition] = useState({
+  const [, setPosition] = useState({
     coordinates: [9.0, 8.6],
     zoom: 1,
   });
+
+  const [mapValue, setMapValue] = useState();
+
+
+  useEffect(() => {
+    const response = async () => {
+      const data = await axios.get(
+        "https://elect-her.herokuapp.com/api/v1/elections/candidate-total-votes?type=map"
+      );
+      setMapValue(data.data);
+    };
+    response();
+  }, []);
+// console.log(mapValue)
+
   const handleMoveEnd = (position) => {
     setPosition(position);
   };
+
+
 
   return (
     <div
@@ -107,7 +140,7 @@ export default function MapChart() {
                     fill={cur ? cur.bg : "#64CCFF"}
                     style={{
                       // default: { fill: "#06F" },
-                      hover: { stroke: "#34b7f8", strokeWidth: 3},
+                      hover: { stroke: "#34b7f8", strokeWidth: 3},                     
                       pressed: { fill: "#64CCFF" },
                       
                     }}
@@ -122,11 +155,20 @@ export default function MapChart() {
                 return (
                   <g key={geo.rsmKey + "-name"}>
                     {cur && (
+                      <>
                       <Marker coordinates={centroid}>
-                        <text y="2" fontSize={16} textAnchor="middle" style={{fontFamily: 'Inter',}}>
+                        <text y="2" fontSize={16} textAnchor="middle" style={{fontFamily: 'Inter'}}>
                           {cur.id}
                         </text>
+                       
                       </Marker>
+                        <Marker coordinates={centroid}>
+                       
+                        <text y="16" fontSize={16} textAnchor="middle" style={{fontFamily: 'Jost', marginTop: '35px', lineHeight: '20px'}}>
+                          {stateValue[cur.id]}
+                        </text>
+                      </Marker>
+                      </>
                     )}
                   </g>
                 );
@@ -136,26 +178,6 @@ export default function MapChart() {
         </Geographies>
       </ComposableMap>
 
-      <div style={{ marginTop: "45px" }}>
-        <div style={{ display: "flex" }}>
-          <div className="div-col1"></div>
-          <div className="text-color">
-            <p>APC</p>
-          </div>
-        </div>
-        <div style={{ display: "flex" }}>
-          <div className="div-col2"></div>
-          <div className="text-color">
-            <p>LP</p>
-          </div>
-        </div>
-        <div style={{ display: "flex" }}>
-          <div className="div-col3"></div>
-          <div className="text-color">
-            <p>PDP</p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

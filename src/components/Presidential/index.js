@@ -3,25 +3,25 @@ import { Tooltip } from "@chakra-ui/react";
 import axios from "axios";
 
 const partyColor = {
-    "All Progressives Congress": "#64CCFF",
+    "All Progressive Congress": "#64CCFF",
     "Labour Party": "#0AA83F",
     "People's Democratic Party": "#D62B3C",
 };
 
 const partyWidth = {
-    "All Progressives Congress": "552px",
+    "All Progressive Congress": "552px",
     "Labour Party": "491px",
     "People's Democratic Party": "225px",
   };
 
   const partyImage = {
-    "All Progressives Congress": "/Images/tinubu.svg",
+    "All Progressive Congress": "/Images/tinubu.svg",
     "Labour Party": "/Images/obi.svg",
     "People's Democratic Party": "/Images/atiku.svg",
   }; 
 
   const partyVotes = {
-    "All Progressives Congress": "51.3%",
+    "All Progressive Congress": "51.3%",
     "Labour Party": "42%",
     "People's Democratic Party": "7.3%",
   }; 
@@ -38,7 +38,7 @@ const Index = () => {
     };
     response();
   }, []);
-  console.log(presidentialData);
+//   console.log(presidentialData, 'prrr99999');
 
   return (
     <div>
@@ -57,7 +57,7 @@ const Index = () => {
                       {presidential.full_name}, {''}
                       {presidential.political_party_name}
                     </h3>
-                    <h3 style={{color: '#585858', fontSize: '14px', fontFamily: 'Jost', fontWeight: '500', marginTop: '-10px'}}>
+                    <h3 style={{fontSize: '14px', fontFamily: 'Jost', fontWeight: '500', marginTop: '-10px'}}>
                         {presidential.candidates_vote} ({partyVotes[presidential.political_party_name]})
                         </h3>
                   </div>
@@ -72,7 +72,7 @@ const Index = () => {
                   backgroundColor:
                     partyColor[presidential.political_party_name],
                   height: "16px",
-                  width: partyWidth[presidential.political_party_name],
+                  width: partyWidth[presidential.political_party_name]
                 }}
               />
             </Tooltip>

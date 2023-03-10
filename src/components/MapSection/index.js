@@ -164,7 +164,7 @@ export default function MapChart() {
                       </Marker>
                         <Marker coordinates={centroid}>
                        
-                        <text y="16" fontSize={16} textAnchor="middle" style={{fontFamily: 'Jost', marginTop: '35px', lineHeight: '20px'}}>
+                        <text y="23" fontSize={20} textAnchor="middle" style={{fontFamily: 'Jost', marginTop: '35px', lineHeight: '20px', fontWeight: 'bold'}}>
                           {stateValue[cur.id]}
                         </text>
                       </Marker>

@@ -28,8 +28,8 @@ console.log(stateResult, 'hjhsd767s')
         <div style={{backgroundColor: '#111421', height: '62px', marginTop: '-22px', borderTopRightRadius: '13px',borderTopLeftRadius: '13px' }}>
             <h3 style={{fontFamily: 'Jost', fontSize: '24px', fontWeight: '500', color: '#FFFFFF', padding: '10px 25px'}}>State Results</h3>
         </div>
-        <table>
-        <tr>
+        <table style={{border: '1px solid #393C4A'}}>
+        <tr style={{border: '1px solid #393C4A'}}>
           <th style={{paddingLeft: '30px', color: '#FFFFFF'}}>State</th>
           <th style={{paddingLeft: '30px', color: '#FFFFFF'}}>APC</th>
           <th style={{paddingLeft: '30px', color: '#FFFFFF'}}>LP</th>
